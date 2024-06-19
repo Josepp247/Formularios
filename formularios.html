@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Formularios</title>
+</head>
+<body>
+	<!--Formulario, es una herramienta que me permite recolectar información y mediante un boton de accion enviar esos datos a una tabla, una BD, una API-->
+	<form action="resultados.html" method="get">
+		<!--get, post-->
+		<div>
+			<label for="user">Usuario</label>
+			<input type="text" name="Usuario" id="user" required>
+			<!--for me permite dar click sobre el nombre de la etiqueta y el texto de la etiqueta y habilitar el input correspondiente a la etiqueta usuario, la cual va a estar definida por un id-->
+		</div>
+		<div>
+			<label for="Nombre">Nombre</label>
+			<input type="text" name="Nombre" id="Nombre" required>
+		</div>
+		<div>
+			<label for="Apellido1">Apellido Paterno</label>
+			<input type="text" name="Apellido Paterno" id="Apellido1" required>
+		</div>
+		<div>
+			<label for="Apellido2">Apellido Materno</label>
+			<input type="text" name="Apellido Materno" id="Apellido2" required>
+		</div>
+		<div>
+			<label for="Edad">Edad</label>
+			<input type="number" name="Edad" id="Edad" min="0" max="100" step="5" required>
+		</div>
+		<div>
+			<label for="Fecha">Fecha de nacimiento</label>
+			<input type="date" name="Fecha de nacimiento" id="Fecha" required>
+		</div>
+		<div>
+			<label for="email">Correo</label>
+			<input type="text" name="mail" id="email" required>
+		</div>
+		<div>
+			<label for="contraseña">Contraseña</label>
+			<input type="password" name="Contraseña" id="contraseña" required>
+		</div>
+		<div>
+			<label for="comentario">Comentarios</label>
+			<input type="text" name="Comentarios" id="comentario">
+		</div>
+		<button type="submit">Guardar</button><!--Enviar con tecla enter-->
+		<button type="reset">Borrar</button><!--Limpiar formulario-->
+	</form>
+</body>
+</html>
